@@ -6,7 +6,7 @@ function pgAlert(msj,tit){
 //Captura
 function deviceReady(){
 	//Obteniendo taps de los botones
-	$('#capturar .rounded .arrow').tap(function(){
+	$('#capturar .rounded li').tap(function(){
 		switch($(this).index()){
 			case 0: //Grabar Audio
 				navigator.device.capture.captureAudio(
